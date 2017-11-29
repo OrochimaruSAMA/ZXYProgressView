@@ -13,6 +13,11 @@
 		41AB79C81FCE8E3F00748922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AB79C71FCE8E3F00748922 /* Assets.xcassets */; };
 		41AB79CB1FCE8E3F00748922 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AB79C91FCE8E3F00748922 /* LaunchScreen.storyboard */; };
 		41AB79CE1FCE8E3F00748922 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AB79CD1FCE8E3F00748922 /* main.m */; };
+		41AB79DD1FCE8E8300748922 /* ZXYBallProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AB79D61FCE8E8300748922 /* ZXYBallProgress.m */; };
+		41AB79DE1FCE8E8300748922 /* ZXYCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AB79D81FCE8E8300748922 /* ZXYCircleProgress.m */; };
+		41AB79DF1FCE8E8300748922 /* ZXYSectorProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AB79DA1FCE8E8300748922 /* ZXYSectorProgress.m */; };
+		41AB79E01FCE8E8300748922 /* ZXYWaveProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AB79DC1FCE8E8300748922 /* ZXYWaveProgress.m */; };
+		41AB79E21FCE8EA100748922 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 41AB79E11FCE8EA100748922 /* demo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		41AB79CA1FCE8E3F00748922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41AB79CC1FCE8E3F00748922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41AB79CD1FCE8E3F00748922 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		41AB79D51FCE8E8300748922 /* ZXYBallProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYBallProgress.h; sourceTree = "<group>"; };
+		41AB79D61FCE8E8300748922 /* ZXYBallProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYBallProgress.m; sourceTree = "<group>"; };
+		41AB79D71FCE8E8300748922 /* ZXYCircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYCircleProgress.h; sourceTree = "<group>"; };
+		41AB79D81FCE8E8300748922 /* ZXYCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYCircleProgress.m; sourceTree = "<group>"; };
+		41AB79D91FCE8E8300748922 /* ZXYSectorProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYSectorProgress.h; sourceTree = "<group>"; };
+		41AB79DA1FCE8E8300748922 /* ZXYSectorProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYSectorProgress.m; sourceTree = "<group>"; };
+		41AB79DB1FCE8E8300748922 /* ZXYWaveProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYWaveProgress.h; sourceTree = "<group>"; };
+		41AB79DC1FCE8E8300748922 /* ZXYWaveProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYWaveProgress.m; sourceTree = "<group>"; };
+		41AB79E11FCE8EA100748922 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 				41AB79BF1FCE8E3F00748922 /* AppDelegate.m */,
 				41AB79C11FCE8E3F00748922 /* ViewController.h */,
 				41AB79C21FCE8E3F00748922 /* ViewController.m */,
+				41AB79D41FCE8E8300748922 /* ZXYProgressView */,
 				41AB79C41FCE8E3F00748922 /* Main.storyboard */,
 				41AB79C71FCE8E3F00748922 /* Assets.xcassets */,
 				41AB79C91FCE8E3F00748922 /* LaunchScreen.storyboard */,
@@ -69,6 +84,22 @@
 				41AB79CD1FCE8E3F00748922 /* main.m */,
 			);
 			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		41AB79D41FCE8E8300748922 /* ZXYProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				41AB79E11FCE8EA100748922 /* demo.gif */,
+				41AB79D51FCE8E8300748922 /* ZXYBallProgress.h */,
+				41AB79D61FCE8E8300748922 /* ZXYBallProgress.m */,
+				41AB79D71FCE8E8300748922 /* ZXYCircleProgress.h */,
+				41AB79D81FCE8E8300748922 /* ZXYCircleProgress.m */,
+				41AB79D91FCE8E8300748922 /* ZXYSectorProgress.h */,
+				41AB79DA1FCE8E8300748922 /* ZXYSectorProgress.m */,
+				41AB79DB1FCE8E8300748922 /* ZXYWaveProgress.h */,
+				41AB79DC1FCE8E8300748922 /* ZXYWaveProgress.m */,
+			);
+			path = ZXYProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41AB79CB1FCE8E3F00748922 /* LaunchScreen.storyboard in Resources */,
+				41AB79E21FCE8EA100748922 /* demo.gif in Resources */,
 				41AB79C81FCE8E3F00748922 /* Assets.xcassets in Resources */,
 				41AB79C61FCE8E3F00748922 /* Main.storyboard in Resources */,
 			);
@@ -144,7 +176,11 @@
 			files = (
 				41AB79C31FCE8E3F00748922 /* ViewController.m in Sources */,
 				41AB79CE1FCE8E3F00748922 /* main.m in Sources */,
+				41AB79DF1FCE8E8300748922 /* ZXYSectorProgress.m in Sources */,
+				41AB79E01FCE8E8300748922 /* ZXYWaveProgress.m in Sources */,
 				41AB79C01FCE8E3F00748922 /* AppDelegate.m in Sources */,
+				41AB79DD1FCE8E8300748922 /* ZXYBallProgress.m in Sources */,
+				41AB79DE1FCE8E8300748922 /* ZXYCircleProgress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
