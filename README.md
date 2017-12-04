@@ -1,9 +1,7 @@
 # ProgressView
 
 ### 四种自定义的圆形进度
-##### 1.扇形进度
-##### 2.球形进度
-##### 3.圆弧进度
-##### 4.波浪进度
+
+[简书文章地址](http://www.jianshu.com/p/08dc5ff5ea9a)
 
 ![image](https://github.com/ZhaoGluTtoNy/ProgressView/blob/master/ProgressView/ZXYProgressView/demo.gif)
