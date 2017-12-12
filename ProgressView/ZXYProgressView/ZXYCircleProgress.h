@@ -14,12 +14,10 @@
 @property (nonatomic, assign) CGFloat progress;
 /** 底层颜色 */
 @property (nonatomic, strong) UIColor *bottomColor;
-/** 底层宽度 */
-@property (nonatomic, assign) CGFloat bottomWidth;
 /** 顶层颜色 */
 @property (nonatomic, strong) UIColor *topColor;
-/** 顶层宽度 */
-@property (nonatomic, assign) CGFloat topWidth;
+/** 宽度 */
+@property (nonatomic, assign) CGFloat progressWidth;
 
 
 /** 初始化 */

@@ -103,7 +103,7 @@
     _waveLayer.path = path.CGPath;
 }
 
-#pragma mark --- 懒加载progressLabel
+#pragma mark - 懒加载
 - (UILabel *)progressLabel {
     if (!_progressLabel) {
         _progressLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 15)];
@@ -114,7 +114,6 @@
     return _progressLabel;
 }
 
-#pragma mark --- 懒加载borderLayer
 - (CAShapeLayer *)borderLayer {
     if (!_borderLayer) {
         _borderLayer = [CAShapeLayer layer];
@@ -122,7 +121,6 @@
     return _borderLayer;
 }
 
-#pragma mark --- 懒加载waveLayer
 - (CAShapeLayer *)waveLayer {
     if (!_waveLayer) {
         _waveLayer = [CAShapeLayer layer];
@@ -131,7 +129,6 @@
 }
 
 #pragma mark - setMethod
-#pragma mark --- 进度progress
 - (void)setProgress:(CGFloat)progress {
     
     _progress = progress;
@@ -147,13 +144,11 @@
     [self drawPath];
 }
 
-#pragma mark --- 填充颜色fillColor
 - (void)setFillColor:(UIColor *)fillColor {
     _fillColor = fillColor;
     _waveLayer.fillColor = _fillColor.CGColor;
 }
 
-#pragma mark --- 边框颜色strokeColor
 - (void)setStrokeColor:(UIColor *)strokeColor {
     _strokeColor = strokeColor;
     _borderLayer.strokeColor = _strokeColor.CGColor;

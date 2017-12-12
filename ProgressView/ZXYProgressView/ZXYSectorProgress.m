@@ -54,7 +54,7 @@
     self.layer.mask = maskLayer;
 }
 
-#pragma mark --- 懒加载label
+#pragma mark - 懒加载
 - (UILabel *)progressLabel {
     if (!_progressLabel) {
         _progressLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 15)];
@@ -65,7 +65,7 @@
     return _progressLabel;
 }
 
-#pragma mark --- 懒加载fillLayer
+#pragma mark - 懒加载
 - (CAShapeLayer *)fillLayer {
     if (!_fillLayer) {
         _fillLayer = [CAShapeLayer layer];
@@ -74,7 +74,6 @@
 }
 
 #pragma mark - setMethod
-#pragma mark --- 进度progress
 - (void)setProgress:(CGFloat)progress {
     
     _progress = progress;
@@ -89,7 +88,6 @@
     _fillLayer.fillColor = _fillColor.CGColor;
 }
 
-#pragma mark --- 填充颜色fillColor
 - (void)setFillColor:(UIColor *)fillColor {
     _fillColor = fillColor;
     _fillLayer.fillColor = _fillColor.CGColor;

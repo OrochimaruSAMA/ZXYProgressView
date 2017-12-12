@@ -44,10 +44,9 @@
     [self.view addSubview:_ballProgress];
     
     _circleProgress = [[ZXYCircleProgress alloc] initWithFrame:CGRectMake(10, 467, 150, 150) progress:0.5];
-    _circleProgress.bottomWidth = 20;
+    _circleProgress.progressWidth = 10;
     _circleProgress.bottomColor = [UIColor redColor];
-    _circleProgress.topWidth = 5;
-    _circleProgress.topColor = [UIColor yellowColor];
+    _circleProgress.topColor = [UIColor cyanColor];
     [self.view addSubview:_circleProgress];
     
     _waveProgress = [[ZXYWaveProgress alloc] initWithFrame:CGRectMake(215, 467, 150, 150) progress:0.5];
