@@ -18,6 +18,7 @@
 		41AB79DF1FCE8E8300748922 /* ZXYSectorProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AB79DA1FCE8E8300748922 /* ZXYSectorProgress.m */; };
 		41AB79E01FCE8E8300748922 /* ZXYWaveProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AB79DC1FCE8E8300748922 /* ZXYWaveProgress.m */; };
 		41AB79E21FCE8EA100748922 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 41AB79E11FCE8EA100748922 /* demo.gif */; };
+		41D820FD1FDFD77000EAD418 /* ZXYGradientProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D820FC1FDFD77000EAD418 /* ZXYGradientProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		41AB79DB1FCE8E8300748922 /* ZXYWaveProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYWaveProgress.h; sourceTree = "<group>"; };
 		41AB79DC1FCE8E8300748922 /* ZXYWaveProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYWaveProgress.m; sourceTree = "<group>"; };
 		41AB79E11FCE8EA100748922 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
+		41D820FB1FDFD77000EAD418 /* ZXYGradientProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXYGradientProgress.h; sourceTree = "<group>"; };
+		41D820FC1FDFD77000EAD418 /* ZXYGradientProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXYGradientProgress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				41AB79DA1FCE8E8300748922 /* ZXYSectorProgress.m */,
 				41AB79DB1FCE8E8300748922 /* ZXYWaveProgress.h */,
 				41AB79DC1FCE8E8300748922 /* ZXYWaveProgress.m */,
+				41D820FB1FDFD77000EAD418 /* ZXYGradientProgress.h */,
+				41D820FC1FDFD77000EAD418 /* ZXYGradientProgress.m */,
 			);
 			path = ZXYProgressView;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				41AB79E01FCE8E8300748922 /* ZXYWaveProgress.m in Sources */,
 				41AB79C01FCE8E3F00748922 /* AppDelegate.m in Sources */,
 				41AB79DD1FCE8E8300748922 /* ZXYBallProgress.m in Sources */,
+				41D820FD1FDFD77000EAD418 /* ZXYGradientProgress.m in Sources */,
 				41AB79DE1FCE8E8300748922 /* ZXYCircleProgress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
