@@ -8,6 +8,10 @@
 
 #import "ZXYGradientProgress.h"
 
+#define ColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 //宽度
 static const CGFloat layerWidth = 10;
 
@@ -83,6 +87,22 @@ static const CGFloat layerWidth = 10;
     
     [gradientLayer setMask:_topLayer];
     [self.layer addSublayer:gradientLayer];
+    
+    //颜色差距较小渐变色 起点为左上角 终点为右下角
+    /*
+    CALayer *layer = [CALayer layer];
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = CGRectMake(-layerWidth/2, -layerWidth/2, self.bounds.size.width + layerWidth, self.bounds.size.height + layerWidth);
+    gradientLayer.colors = @[(id)ColorFromRGB(0xFFD800).CGColor,
+                             (id)ColorFromRGB(0XFDBC13).CGColor,
+                             (id)ColorFromRGB(0xFF8100).CGColor];
+    gradientLayer.startPoint = CGPointMake(0, 0);
+    gradientLayer.endPoint = CGPointMake(1, 1);
+    [layer addSublayer:gradientLayer];
+    
+    [layer setMask:_topLayer];
+    [self.layer addSublayer:layer];
+     */
 }
 
 #pragma mark - 懒加载
