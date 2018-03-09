@@ -37,22 +37,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _sectorProgress = [[ZXYSectorProgress alloc] initWithFrame:CGRectMake(10, 50, 150, 150) progress:0];
+    _sectorProgress = [[ZXYSectorProgress alloc] initWithFrame:CGRectMake(10, 100, 150, 150) progress:0];
     _sectorProgress.fillColor = [UIColor yellowColor];
     [self.view addSubview:_sectorProgress];
     
-    _ballProgress = [[ZXYBallProgress alloc] initWithFrame:CGRectMake(215, 50, 150, 150) progress:0];
+    _ballProgress = [[ZXYBallProgress alloc] initWithFrame:CGRectMake(215, 100, 150, 150) progress:0];
     _ballProgress.fillColor = [UIColor yellowColor];
     _ballProgress.strokeColor = [UIColor redColor];
     [self.view addSubview:_ballProgress];
     
-    _circleProgress = [[ZXYCircleProgress alloc] initWithFrame:CGRectMake(10, 467, 150, 150) progress:0];
+    _circleProgress = [[ZXYCircleProgress alloc] initWithFrame:CGRectMake(10, 517, 150, 150) progress:0];
     _circleProgress.progressWidth = 10;
     _circleProgress.bottomColor = [UIColor redColor];
     _circleProgress.topColor = [UIColor cyanColor];
     [self.view addSubview:_circleProgress];
     
-    _waveProgress = [[ZXYWaveProgress alloc] initWithFrame:CGRectMake(215, 467, 150, 150) progress:0];
+    _waveProgress = [[ZXYWaveProgress alloc] initWithFrame:CGRectMake(215, 517, 150, 150) progress:0];
     _waveProgress.fillColor = [UIColor redColor];
     _waveProgress.strokeColor = [UIColor blackColor];
     [self.view addSubview:_waveProgress];
@@ -62,7 +62,7 @@
     _gradientProgress.bottomColor = [UIColor purpleColor];
     [self.view addSubview:_gradientProgress];
     
-    _slider = [[UISlider alloc] initWithFrame:CGRectMake(20, 20, self.view.bounds.size.width - 40, 30)];
+    _slider = [[UISlider alloc] initWithFrame:CGRectMake(20, 70, self.view.bounds.size.width - 40, 30)];
     _slider.minimumValue = 0;
     _slider.maximumValue = 1;
     _slider.value = 0;
